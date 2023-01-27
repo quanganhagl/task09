@@ -1,0 +1,117 @@
+<div class="c-works">
+    <div class="c-works__wrapper ">
+        <div class="c-works__brief ">
+            <div class="c-works__briefwrapper l-container--1040px">
+                <section class="c-works__briefsummary">
+                    <h2 class="c-works__heading">私たちの仕事</h2>
+                    <p class="c-works__descr">エクステリアのプロ集団と言っても、<br
+                            class="is-display--onlysp">仕事内容はさまざまです。<br>仕事をしていく上で、「あなたの興味のあること」<br
+                            class="is-display--onlysp"><span class="is-palt--onlysp">「</span>向いていること」が見つけられるかもしれませ<span
+                            class="is-palt--onlysp">ん。</span>
+                    </p>
+                </section>
+                <section class="c-works__briefjd">
+                    <div class="c-works__imagesjd">
+                        <div class="c-works__images">
+                            <div class="c-works__imagewrapper">
+                                <picture>
+                                    <source media="(max-width: 767px)" srcset="./assets/img/works__image1--sp.jpg">
+                                    <source media="(max-width: 1024px)" srcset="./assets/img/works__image1--tab.jpg">
+                                    <img src="./assets/img/works__image1.jpg" alt="私たちの仕事" class="c-works__image">
+                                </picture>
+                            </div>
+                            <div class="c-works__imagewrapper">
+                                <picture>
+                                    <source media="(max-width: 767px)" srcset="./assets/img/works__image2--sp.jpg">
+                                    <source media="(max-width: 1024px)" srcset="./assets/img/works__image2--tab.jpg">
+                                    <img src="./assets/img/works__image2.jpg" alt="私たちの仕事" class="c-works__image">
+                                </picture>
+                            </div>
+                            <div class="c-works__imagewrapper">
+                                <picture>
+                                    <source media="(max-width: 767px)" srcset="./assets/img/works__image3--sp.jpg">
+                                    <source media="(max-width: 1024px)" srcset="./assets/img/works__image3--tab.jpg">
+                                    <img src="./assets/img/works__image3.jpg" alt="私たちの仕事" class="c-works__image">
+                                </picture>
+                            </div>
+                            <div class="c-works__imagewrapper">
+                                <picture>
+                                    <source media="(max-width: 767px)" srcset="./assets/img/works__image4--sp.jpg">
+                                    <source media="(max-width: 1024px)" srcset="./assets/img/works__image4--tab.jpg">
+                                    <img src="./assets/img/works__image4.jpg" alt="私たちの仕事" class="c-works__image">
+                                </picture>
+                            </div>
+
+                        </div>
+                        <div class="c-works__jd">
+                            <h3 class="c-works__jdheading">仕事内容の紹介</h3>
+                            <p class="c-works__jddescr">屋外での現場作業をメインに行ないます。</p>
+                            <ol class="c-works__ol">
+                                <li class="c-works__olpoint">
+                                    <span class="c-works__olpointtext">重機の運転、土木作業の手元</span>
+                                </li>
+                                <li class="c-works__olpoint">
+                                    <span
+                                        class="c-works__olpointtext">ブロック積み、フェンス、カーポート、門扉、照明、ポスト、表札と言われる金物商品の取付工事</span>
+                                </li>
+                                <li class="c-works__olpoint">
+                                    <span class="c-works__olpointtext">左官作業と言われるコンクリートを扱う工事作業</span>
+                                </li>
+                                <li class="c-works__olpoint">
+                                    <span class="c-works__olpointtext">電気工事（照明、インターホンの取付）</span>
+                                </li>
+                                <li class="c-works__olpoint">
+                                    <span class="c-works__olpointtext">設備工事（給水管、排水管の設置）</span>
+                                </li>
+                                <li class="c-works__olpoint">
+                                    <span class="c-works__olpointtext">植栽工事（新築への植栽の植え付け作業）</span>
+                                </li>
+                                <li class="c-works__olpoint">
+                                    <span class="c-works__olpointtext">鉄筋の組立て作業</span>
+                                </li>
+                                <li class="c-works__olpoint">
+                                    <span class="c-works__olpointtext">型枠の設置工事</span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <section class="c-works__media l-container--1040px">
+            <h2 class="c-works__mediaheading">Photos & Movie</h2>
+            <p class="c-works__mediadescription">私たちの仕事内容の一部を<br class="is-display--onlysp">動画と写真でお伝えします。</p>
+            <div class="c-works__mediawrapperwrapper">
+
+                <div class="c-works__mediawrapper">
+                    <div class="c-works__mediavideowrapper">
+                        <video class="c-works__mediavideo" src="./assets/img/entex_video01.mp4" autoplay="autoplay"
+                            loop="true" controls muted>
+                            <p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
+                        </video>
+                    </div>
+                    <div class="c-works__mediaimages">
+                        <% mediaimages.forEach(mediaimage=> { %>
+                            <div class="c-works__mediaimagewrapper">
+                                <picture>
+                                    <source media="(max-width: 767px)" srcset="<%= mediaimage.src %>--sp.jpg">
+                                    <source media="(max-width: 1024px)" srcset="<%= mediaimage.src %>--tab.jpg">
+                                    <img class="c-works__mediaimage" src="<%= mediaimage.src %>.jpg"
+                                        alt="Photos & Movie">
+                                </picture>
+                                <div class="c-works__mediaimagehover">
+                                    <div class="c-works__mediaimagehoverwrapper">
+                                        <div class="c-works__mediazoomiconwrapper"><img
+                                                src="./assets/img/works__mediazoomicon.png" alt="Photos & Movie"
+                                                class="c-works__mediazoomicon"></div>
+                                        <span class="c-works__mediapickup">PICK UP</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <% }); %>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

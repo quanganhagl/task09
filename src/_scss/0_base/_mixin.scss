@@ -1,0 +1,67 @@
+//============================================
+// clearfix
+//============================================
+@mixin clear {
+    *zoom: 1;
+
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+//============================================
+// breakpoint
+//============================================
+@mixin max375px {
+    @media only screen and (max-width: 375px) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin min768px {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media only screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin tabonly {
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin pconly {
+    @media only screen and (min-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin max1200px {
+    @media only screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin only1201pxup {
+    @media only screen and (min-width: 1201px) {
+        @content;
+    }
+}
+
+//============================================
+// font-family
+//============================================

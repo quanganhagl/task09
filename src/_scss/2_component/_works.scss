@@ -1,0 +1,423 @@
+.c-works {
+    .c-works__brief {
+        position: relative;
+        padding: 93px 80px 0;
+        @include tab {
+            padding: 53px 20px 0;
+        }
+        @include sp {
+            padding: 32px 10px 0;
+        }
+
+        &::after {
+            content: "";
+            background-color: #eff3f5;
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            right: 0;
+            height: 944px;
+            width: calc(46.7% + 361px);
+            @include tab {
+                height: 757px;
+            }
+            @include sp {
+                width: calc(100% - 10px);
+            }
+        }
+    }
+
+    .c-works__wrapper.l-container--1040px {
+        @include sp {
+            max-width: unset;
+        }
+    }
+
+    .c-works__heading {
+        font-size: 3.4rem;
+        font-weight: 500;
+        color: $secondary-color;
+        text-align: center;
+        letter-spacing: 2.4px;
+        @include tab {
+            font-size: 3rem;
+            letter-spacing: 1.7px;
+        }
+        @include sp {
+            font-size: 2.4rem;
+        }
+    }
+
+    .c-works__descr {
+        font-size: 1.6rem;
+        text-align: center;
+        margin-top: 7px;
+        letter-spacing: 0.3px;
+        line-height: 1.8;
+        @include tab {
+            font-size: 1.4rem;
+        }
+        @include sp {
+            line-height: 1.6;
+            margin-top: -1px;
+            padding: 0 10px;
+        }
+    }
+
+    .c-works__imagesjd {
+        display: flex;
+        margin-top: 57px;
+        position: relative;
+
+        @include tab {
+            margin-top: 36px;
+        }
+        @include sp {
+            flex-wrap: wrap;
+            margin-top: 34px;
+        }
+    }
+
+    .c-works__images {
+        margin-left: 40px;
+        min-width: 400px;
+        @include tab {
+            min-width: unset;
+            width: 288px;
+            // width: 70%;
+            // max-width: 288px;
+
+            margin-left: 0;
+        }
+        @include sp {
+            display: flex;
+            flex-wrap: wrap;
+            // min-width: 183px;
+            // position: absolute;
+            // right: -10px;
+            margin-right: -10px;
+            width: unset;
+        }
+        // flex: 1 1 400px;
+        // width: fit-content;
+        // display: flex;
+    }
+
+    .c-works__imagewrapper {
+        @include sp {
+            width: 50%;
+        }
+    }
+
+    .c-works__image {
+        @include sp {
+            width: 100%;
+        }
+    }
+
+    .c-works__jd {
+        max-width: 600px;
+        padding-left: 3.8%;
+        @include tab {
+            // max-width: 440px;
+            max-width: 440px;
+            padding-left: 2.7%;
+            padding-bottom: 38px;
+        }
+        @include sp {
+            margin: 0 auto;
+            max-width: 600px;
+        }
+    }
+
+    .c-works__jdheading {
+        font-size: 3.4rem;
+        font-weight: 500;
+        color: $secondary-color;
+        margin-top: 93px;
+        letter-spacing: 2.5px;
+        @include tab {
+            font-size: 3rem;
+            margin-top: 53px;
+            letter-spacing: 1.7px;
+        }
+        @include sp {
+            font-size: 2.4rem;
+            margin-top: 32px;
+        }
+    }
+
+    .c-works__jddescr {
+        font-size: 1.6rem;
+        margin-top: 8px;
+        letter-spacing: 0.4px;
+        @include tab {
+            font-size: 1.4rem;
+            margin-top: 5px;
+        }
+        @include sp {
+            margin-top: 3px;
+        }
+    }
+
+    .c-works__ol {
+        margin-top: 33px;
+        @include tab {
+            margin-top: 20px;
+        }
+        @include sp {
+            margin-top: 17px;
+        }
+    }
+
+    .c-works__olpoint {
+        font-weight: 300;
+        color: $secondary-color;
+        border: 1px solid $secondary-color;
+        display: flex;
+
+        counter-increment: customlistcounter;
+        align-items: center;
+
+        font-size: 1.8rem;
+        @include tab {
+            font-size: 1.6rem;
+        }
+        @include sp {
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+
+        &::before {
+            content: counter(customlistcounter);
+            display: inline-block;
+            padding: 12px 23px 13px 21px;
+            background-color: $secondary-color;
+            font-family: $main-fonts;
+            font-size: 2rem;
+            font-weight: 300;
+            color: #fff;
+            @include tab {
+                padding: 6px 15px 8px;
+            }
+        }
+
+        &:not(:nth-child(1)) {
+            margin-top: 21px;
+            @include tab {
+                margin-top: 16px;
+            }
+            @include sp {
+                margin-top: 11px;
+            }
+        }
+
+        &:nth-child(2) {
+            &::before {
+                padding: 24px 23px 30px 21px;
+                @include tab {
+                    padding: 31px 17px 29px 14px;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            @include tab {
+                margin-top: 9px;
+            }
+
+            &::before {
+                @include tab {
+                    padding: 17px 17px 20px 14px;
+                }
+            }
+        }
+    }
+
+    .c-works__olpointtext {
+        margin-left: 17px;
+        @include tab {
+            margin-left: 14px;
+        }
+        letter-spacing: 0.5px;
+
+        padding-right: 8px;
+    }
+
+    .c-works__media {
+        padding-top: 89px;
+        @include tab {
+            padding-top: 42px;
+            // padding-top: 68px;
+        }
+        @include sp {
+            padding-top: 31px;
+        }
+    }
+
+    .c-works__mediaheading {
+        font-size: 3.4rem;
+        font-weight: 500;
+        color: $secondary-color;
+        text-align: center;
+        letter-spacing: 1.8px;
+        @include sp {
+            font-size: 2.4rem;
+            letter-spacing: 0.8px;
+        }
+    }
+
+    .c-works__mediadescription {
+        text-align: center;
+        margin-top: 12px;
+        letter-spacing: 0.4px;
+        @include tab {
+            margin-top: 7px;
+        }
+        @include sp {
+            font-size: 1.4rem;
+            margin-top: 1px;
+            line-height: 1.6;
+        }
+    }
+
+    .c-works__mediawrapperwrapper {
+        padding: 0 80px;
+        margin-top: 36px;
+        @include tab {
+            padding: 0 4px;
+        }
+        @include sp {
+            margin-top: 35px;
+            padding: 0 10px;
+            width: 100%;
+        }
+    }
+
+    .c-works__mediawrapper {
+        display: flex;
+        // margin-top: 0;
+        padding: 20px;
+        border: 1px solid $secondary-color;
+        padding: 39px 37px 34px 40px;
+        @include tab {
+            padding: 19px 20px 13px;
+        }
+        @include sp {
+            width: 100%;
+            flex-wrap: wrap;
+            padding: 9px;
+            // max-width: 355px;
+            max-width: 450px;
+            margin: 0 auto;
+            width: 100%;
+            height: fit-content;
+        }
+    }
+
+    .c-works__mediavideowrapper {
+        @include sp {
+            width: 100%;
+            // height: 100%;
+            height: 450px;
+        }
+    }
+
+    .c-works__mediavideo {
+        width: 400px;
+        object-fit: cover;
+        height: 560px;
+        @include tab {
+            width: 343px;
+            height: 462px;
+        }
+        @include sp {
+            // width: 335px;
+            // height: 450px;
+            width: 100%;
+            height: 100%;
+            object-position: 0 -40px;
+        }
+    }
+
+    .c-works__mediaimages {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+        @include sp {
+            margin-left: 0;
+            // margin-top: 13px;
+            margin-top: 20px;
+        }
+    }
+
+    .c-works__mediaimagewrapper {
+        width: calc((100% - 19px) / 2);
+        position: relative;
+        height: fit-content;
+        @include tab {
+            width: calc((100% - 21px) / 2);
+        }
+        @include sp {
+            width: calc((100% - 10px) / 2);
+        }
+
+        &:nth-child(2n) {
+            margin-left: 19px;
+            @include tab {
+                margin-left: 21px;
+            }
+            @include sp {
+                margin-left: 10px;
+            }
+        }
+
+        &:nth-child(n + 3) {
+            margin-top: 17px;
+            @include tab {
+                margin-top: 14px;
+            }
+            @include sp {
+                margin-top: 11px;
+            }
+        }
+    }
+
+    .c-works__mediaimage {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .c-works__mediaimagehover {
+        background-color: rgba($color: #fff, $alpha: 0.6);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+
+        &:hover {
+            display: flex;
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+
+    .c-works__mediazoomiconwrapper {
+        text-align: center;
+    }
+
+    .c-works__mediazoomicon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .c-works__mediapickup {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #005384;
+    }
+}

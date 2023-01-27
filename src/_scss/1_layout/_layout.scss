@@ -1,0 +1,47 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    font-family: $main-fonts;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $primary-color;
+
+    line-height: 1.5;
+
+    @include sp {
+        min-width: 320px;
+    }
+}
+//-------------------------------------------------------
+main {
+}
+
+//-------------------------------------------------------
+.l-container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: $base-width;
+
+    &--1080px {
+        @extend .l-container;
+        max-width: 1080px;
+    }
+
+    &--1040px {
+        @extend .l-container;
+        max-width: 1040px;
+        @include tab {
+            max-width: 738px;
+        }
+    }
+
+    &--960px {
+        @extend .l-container;
+        max-width: 960px;
+    }
+
+    &--880px {
+        @extend .l-container;
+        max-width: 880px;
+    }
+}

@@ -1,0 +1,181 @@
+.c-about {
+    position: relative;
+
+    // padding: 101px calc(21.3% - 200px) 116px calc(26.6% - 200px);
+    padding: 101px 5% 116px;
+    @include tab {
+        padding: 60px 15px 74px;
+    }
+
+    @include sp {
+        padding: 40px 20px 49px;
+    }
+
+    &::after {
+        content: "";
+        height: 100%;
+        background-color: #0080cc;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: calc(46.7% + 361px);
+        @include tab {
+            width: calc(51.7% + 271px);
+        }
+        @include sp {
+            width: calc(100% - 10px);
+        }
+    }
+
+    .c-about__wrapper {
+        display: flex;
+        // height: 976px;
+        padding-bottom: 6px;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1080px;
+
+        @include tab {
+            max-width: 738px;
+        }
+
+        @include sp {
+            flex-wrap: wrap;
+
+            max-width: 450px;
+        }
+    }
+
+    .c-about__text {
+        color: #fff;
+        max-width: 421px;
+        @include pconly {
+            margin-left: 5.4%;
+        }
+        @include tab {
+            max-width: 396px;
+        }
+        @include sp {
+            order: 2;
+            max-width: unset;
+        }
+    }
+
+    .c-about__textheading {
+        font-size: 3.4rem;
+        font-weight: 500;
+        margin-top: 11px;
+        letter-spacing: 2.5px;
+        @include tab {
+            font-size: 3rem;
+            margin-top: 25px;
+            letter-spacing: 1.8px;
+        }
+        @include sp {
+            font-size: 2.4rem;
+            margin-top: 44px;
+            letter-spacing: 1.2px;
+        }
+    }
+
+    .c-about__textpara {
+        font-size: 1.6rem;
+        margin-top: 20px;
+        font-size: 1.6rem;
+        letter-spacing: 0.4px;
+        line-height: 1.77;
+        @include tab {
+            font-size: 1.4rem;
+            margin-left: 2px;
+        }
+        @include sp {
+            letter-spacing: 0.3px;
+            line-height: 1.58;
+            margin-left: unset;
+        }
+
+        &:nth-of-type(1) {
+            margin-top: 23px;
+            @include tab {
+                margin-top: 10px;
+            }
+            @include sp {
+                margin-top: 9px;
+            }
+        }
+
+        &:not(:nth-of-type(1)) {
+            margin-top: 27px;
+            @include tab {
+                margin-top: 26px;
+            }
+            @include sp {
+                margin-top: 22px;
+            }
+        }
+    }
+
+    .c-about__images {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 5.8%;
+        align-content: center;
+
+        @include tab {
+            margin-left: 28px;
+        }
+        @include sp {
+            order: 1;
+            margin-left: 0;
+        }
+    }
+
+    .c-about__imagewrapper {
+        position: relative;
+        height: fit-content;
+
+        max-width: 540px;
+        @include tab {
+            max-width: 309px;
+        }
+        @include sp {
+            max-width: unset;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100.3%;
+            border: 2px solid #fff;
+            top: 18px;
+            left: -22px;
+            @include tab {
+                width: 98.8%;
+                top: 16px;
+                left: -17px;
+                height: 100%;
+            }
+            @include sp {
+                top: 10px;
+                left: -10px;
+                height: 98%;
+            }
+        }
+
+        &:nth-child(2) {
+            margin-top: 46px;
+            @include tab {
+                margin-top: 41px;
+            }
+            @include sp {
+                margin-top: 29px;
+            }
+        }
+    }
+
+    .c-about__image {
+    }
+}

@@ -1,0 +1,181 @@
+.c-mainvisual {
+    background-image: url(../../assets/img/mainvisual__bg.jpg);
+    background-position: top 40% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 768px;
+    padding: 0 41px;
+
+    @include tab {
+        background-image: url(../../assets/img/mainvisual__bg--tab.jpg);
+        background-position: top calc(33px + 30%) center;
+        height: 787px;
+    }
+
+    @include sp {
+        background-image: url(../../assets/img/mainvisual__bg--sp.jpg);
+        // background-position: top center;
+        // background-position: top -7px left;
+        // height: 599px;
+        background-position: top calc(-5px + 33%) center;
+        height: 598px;
+
+        padding: 0 10px;
+    }
+
+    .c-mainvisual__wrapper {
+        position: relative;
+        height: 100%;
+    }
+
+    .c-mainvisual__heading {
+        position: absolute;
+        top: 216px;
+        @include tab {
+            top: 265px;
+        }
+        @include sp {
+            top: 187px;
+            left: 10px;
+        }
+    }
+
+    .c-mainvisual__headingtext {
+        font-size: 5rem;
+        font-weight: 500;
+        color: #fff;
+        background-color: $secondary-color;
+        width: fit-content;
+        line-height: 1.38;
+        letter-spacing: 2.6px;
+        padding-left: 7px;
+        @include tab {
+            font-size: 4rem;
+            line-height: 1.25;
+            padding-left: 9px;
+        }
+        @include sp {
+            font-size: 2.8rem;
+            padding-left: 5px;
+            line-height: 1.36;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 17px;
+            @include sp {
+                margin-bottom: 10px;
+            }
+        }
+
+        &:nth-child(1) {
+            padding-right: 4px;
+            @include tab {
+                padding-right: 6px;
+            }
+            @include sp {
+                letter-spacing: 0.2px;
+                padding-right: 13px;
+            }
+        }
+
+        &:nth-child(2) {
+            padding-right: 10px;
+            @include tab {
+                letter-spacing: 1.6px;
+                padding-right: 13px;
+            }
+            @include sp {
+                letter-spacing: 0.2px;
+                padding-right: 7px;
+            }
+        }
+
+        &:nth-child(3) {
+            font-feature-settings: "palt";
+            letter-spacing: 5.8px;
+            @include tab {
+                letter-spacing: 4.3px;
+            }
+            @include sp {
+                letter-spacing: 2.2px;
+                padding-right: 1px;
+            }
+        }
+    }
+
+    .c-mainvisual__descrbox {
+        height: 95px;
+        display: flex;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 0 20px;
+        @include tab {
+            height: 64px;
+        }
+        @include sp {
+            height: 73px;
+            display: block;
+            padding: 13px 36px 0;
+            text-align: center;
+            letter-spacing: 0.9px;
+            font-feature-settings: "palt";
+        }
+    }
+
+    .c-mainvisual__descr {
+        font-size: 2.6rem;
+        font-weight: 500;
+        color: $secondary-color;
+        letter-spacing: 1.8px;
+        @include tab {
+            font-size: 2.2rem;
+            letter-spacing: 1.55px;
+        }
+        @include sp {
+            font-size: 1.8rem;
+            letter-spacing: 1.15px;
+        }
+
+        &--orange {
+            @extend .c-mainvisual__descr;
+            color: $highlight-color;
+        }
+    }
+
+    .c-mainvisual__scroll {
+        font-size: 2rem;
+        font-weight: 500;
+        color: $secondary-color;
+        position: absolute;
+        bottom: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include tab {
+            font-size: 2rem;
+            bottom: 97px;
+        }
+        @include sp {
+            font-size: 1.6rem;
+            bottom: 93px;
+        }
+
+        &::after {
+            content: "";
+            width: 2px;
+            height: 30px;
+            background-color: $secondary-color;
+            position: absolute;
+            top: 42px;
+            left: 50%;
+            transform: translateX(-50%);
+            @include sp {
+                height: 26px;
+                top: 29px;
+            }
+        }
+    }
+}

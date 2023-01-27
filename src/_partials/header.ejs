@@ -1,0 +1,43 @@
+<header class="c-header">
+    <nav class="c-header__wrapper">
+        <div class="c-header__logoblock">
+            <a href="./">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./assets/img/header__logo--sp.png">
+                    <source media="(max-width: 1024px)" srcset="./assets/img/header__logo--tab.png">
+                    <img src="./assets/img/header__logo.png" alt="ENTEX Recruitment 2020" class="c-header__logo">
+                </picture>
+                <span class="c-header__logotitle">Recruitment 2020</span>
+            </a>
+        </div>
+
+        <div class="c-header__navbarnormal">
+            <% navbtns.forEach(navbtn=> { %>
+                <a href="#<%= navbtn.id %>" class="c-header__navlink">
+                    <img src="./assets/img/header__playbtn.svg" alt="<%= navbtn.navbtnname %>"
+                        class="c-header__playbtn is-display--onlysp">
+                    <%= navbtn.navbtnname %>
+                </a>
+
+                <% }); %>
+                    <a href="#recruit" class="c-header__recruitlink--bigbtn is-display--onlysp">
+                        <img src="./assets/img/header__recruiticon.svg" alt="募集要項"
+                            class="c-header__recruiticon--bigbtn">
+                        <span class="c-header__recruittext--bigbtn">
+                            募集要項
+                        </span>
+                    </a>
+        </div>
+
+        <a href="#recruit" class="c-header__recruitlink">
+            <img src="./assets/img/header__recruiticon.svg" alt="募集要項" class="c-header__recruiticon">
+            <span class="c-header__recruittext">
+                募集要項
+            </span>
+        </a>
+
+        <div class="c-header__navbtnspwrapper is-display--onlysp">
+            <img src="./assets/img/header__navbtnsp.svg" alt="ENTEX Recruitment 2020" class="c-header__navbtnsp">
+        </div>
+    </nav>
+</header>
