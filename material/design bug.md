@@ -8,6 +8,12 @@ https://gyazo.com/84f5292a8cb93499197ff4f569724a32
 https://gyazo.com/66965a91c77ab465a5cc337e9abf45fb
 https://gyazo.com/96dff1c261c50fb845e6e53a7e413366
 
+27/1
+https://gyazo.com/5373ce50dfd20b67659c93351103fb86
+https://gyazo.com/e3054ada98a905814d73cd0e68136dae
+
 loi can support:
 1/ transition transform khi dong mo menu sp, nhung khi keo responsive tu pc ve mobile thi khong co transition cho transform
-2/
+2/ hien thong bao day cua slack ca 2 man hinh tranh miss tin nhan
+
+https://docs.google.com/spreadsheets/d/1K3ti8Bsdxhc-13nvP3CiZUaX8MMtRKKVPBHaAIkcnuU/edit?usp=sharing
