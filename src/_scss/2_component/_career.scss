@@ -54,56 +54,45 @@
     }
 
     .c-career__hrdev {
-        // background-image: url(../../assets/img/career__hrdev__bg.jpg);
-        // background-position: top 10% center;
-        // background-repeat: no-repeat;
-        background-size: cover;
-        // height: 674px;
-        // padding: 0 41px;
         position: relative;
         margin-top: 100px;
         @include tab {
             margin-top: 32px;
-            // background-image: url(../../assets/img/career__hrdev__bg--tab.jpg);
-            // height: 567px;
-            // background-position: top 90% center;
-            // padding: 0 20px;
         }
         @include sp {
-            margin-top: 35px;
-            // background-image: url(../../assets/img/career__hrdev__bg--sp.jpg);
-            height: 262px;
-            // background-position: top 35% center;
+            margin-top: 34px;
         }
     }
 
     .c-career__hrdevimgwrapper {
-        object-position: top 10% center;
-        object-fit: cover;
-        @include tab {
-            object-position: top 90% center;
-        }
-        @include sp {
-            object-position: top 35% center;
-        }
     }
 
     .c-career__hrdevimg {
         height: 674px;
+        object-fit: cover;
+        width: 100%;
+        object-position: 50% 10%;
         @include tab {
             height: 567px;
+            object-position: 50% 90%;
+        }
+        @include sp {
+            height: 262px;
+            object-position: 50% 35%;
+        }
+    }
+
+    .c-career_hrdevtextwrapperwrapperwrapper {
+        padding: 0 41px;
+        @include tab {
+            padding: 0 20px;
+        }
+        @include sp {
+            padding: 35px 20px 0;
         }
     }
 
     .c-career__hrdevtextwrapperwrapper {
-        position: absolute;
-        top: 96px;
-        left: 120px;
-        width: fit-content;
-        @include tab {
-            top: 60px;
-            left: 20px;
-        }
     }
 
     .c-career__hrdevtextwrapper {
@@ -115,6 +104,9 @@
         //     top: 50%;
         //     transform: translateY(-50%);
         // }
+
+        position: absolute;
+        top: 96px;
         @include tab {
             top: 60px;
             padding: 34px 30px 37px 39px;
@@ -122,11 +114,12 @@
             width: 383px;
         }
         @include sp {
-            // position: static;
+            position: static;
+            padding: 0;
             width: 100%;
-            padding: 35px 20px 0;
-            left: 0;
-            top: 262px;
+            // padding: 35px 20px 0;
+            // left: 0;
+            // top: 262px;
         }
     }
 
@@ -173,13 +166,12 @@
     .c-career__path {
         padding-top: 167px;
         position: relative;
-        padding-bottom: 130px;
+        padding-bottom: 104px;
         @include tab {
             padding: 52px 40px 59px;
         }
         @include sp {
-            margin-top: 362px;
-            padding: 33px 10px 59px;
+            padding: 67px 10px 38px;
         }
 
         &::after {
@@ -188,7 +180,7 @@
             top: 74px;
             left: 0;
             background-color: #f8f8f8;
-            height: calc(100% - 100px);
+            height: calc(100% - 74px);
             z-index: -1;
             width: calc(51.7% + 301px);
             @include tab {
@@ -198,7 +190,10 @@
                 width: calc(51.7% + 271px);
             }
             @include sp {
+                top: 34px;
+
                 width: calc(100% - 10px);
+                height: calc(100% - 30px);
             }
         }
     }
@@ -254,9 +249,9 @@
         }
 
         &:not(:nth-of-type(1)) {
-            margin-top: 15px;
+            margin-top: 17px;
             @include tab {
-                margin-top: 4px;
+                margin-top: 1px;
             }
             @include sp {
                 margin-top: 18px;
@@ -264,7 +259,7 @@
         }
 
         &:nth-of-type(3) {
-            transform: translateY(-5px);
+            // transform: translateY(-5px);
             @include tab {
                 transform: unset;
             }
@@ -295,7 +290,7 @@
 
         &:nth-of-type(2) {
             .c-career__pathdetaildescription {
-                transform: translateY(-5px);
+                // transform: translateY(-5px);
             }
             // @include tab {
             //     transform: translateY(-3px);
@@ -305,7 +300,7 @@
 
         &:nth-of-type(3) {
             .c-career__pathdetaildescription {
-                transform: translateY(-4px);
+                // transform: translateY(-4px);
                 @include tab {
                     transform: unset;
                 }
@@ -313,26 +308,37 @@
         }
 
         &:not(:nth-of-type(1)) {
-            padding-bottom: 24px;
-            // @include tab {
-            //     padding-bottom: 19px;
-            // }
+            padding-bottom: 20px;
+            margin-top: 12px;
+            padding-top: 9px;
+            @include tab {
+                padding-bottom: 28px;
+                margin-top: 2px;
+                padding-top: 19px;
+            }
             @include sp {
-                padding: 19px 0 11px 28px;
+                padding: 16px 0 12px 28px;
+                margin-top: 13px;
             }
         }
 
         &:nth-of-type(4) {
             .c-career__pathdetaildescription {
-                line-height: 1.6;
-                letter-spacing: -1.6px;
+                line-height: 1.77;
+                letter-spacing: 0.32px;
+                margin-top: 6px;
+                @include tab {
+                    margin-top: 1px;
+                    line-height: 1.56;
+                    letter-spacing: -1.68px;
+                }
                 @include sp {
                     letter-spacing: 0.4px;
                     line-height: 1.55;
                 }
 
                 &:nth-of-type(2) {
-                    margin-top: 24px;
+                    margin-top: 26px;
                     @include sp {
                         margin-top: 14px;
                     }
@@ -353,6 +359,7 @@
         @include sp {
             font-size: 1.4rem;
             line-height: 1.6;
+            letter-spacing: 0.22px;
         }
     }
 
@@ -361,19 +368,19 @@
 
     .c-career__questionwrapper {
         position: relative;
-        margin-top: 54px;
+        margin-top: 49px;
         margin-left: 39px;
         text-align: center;
         margin-right: 7px;
         @include tab {
             margin-left: 80px;
-            margin-top: 44px;
+            margin-top: 40px;
             margin-right: 1px;
         }
         @include sp {
             margin-left: -20px;
             margin-top: 42px;
-            margin-right: -7px;
+            margin-right: -17px;
         }
     }
 
@@ -406,14 +413,339 @@
         padding: 27px 0 33px;
         @include tab {
             font-size: 2.1rem;
-            padding: 26px 0 38px;
-            line-height: 1.7;
+            padding: 24px 0 38px;
+            line-height: 1.74;
         }
         @include sp {
             font-size: 1.8rem;
-            line-height: 1.45;
             letter-spacing: -0.2px;
+            line-height: 1.42;
             padding: 29px 18px 35px;
+        }
+    }
+    //same as works section
+    .c-career__welfare {
+        position: relative;
+        padding: 0 80px;
+        @include tab {
+            padding: 0 20px;
+        }
+        @include sp {
+            padding: 0 10px;
+        }
+
+        &::after {
+            content: "";
+            background-color: #fdfbef;
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            // width: calc(46.7% + 361px);
+            width: calc(51.7% + 301px);
+
+            @include tab {
+                // height: 757px;
+            }
+            @include sp {
+                width: calc(100% - 10px);
+            }
+        }
+    }
+
+    .c-career__imagestext {
+        display: flex;
+        // margin-top: 57px;
+        position: relative;
+
+        @include tab {
+            // margin-top: 36px;
+        }
+        @include sp {
+            flex-wrap: wrap;
+            margin-top: 34px;
+        }
+    }
+
+    .c-career__images {
+        margin-left: 40px;
+        min-width: 400px;
+        @include tab {
+            min-width: unset;
+            width: 288px;
+            // width: 70%;
+            // max-width: 288px;
+
+            margin-left: 0;
+        }
+        @include sp {
+            display: flex;
+            flex-wrap: wrap;
+            // min-width: 183px;
+            // position: absolute;
+            // right: -10px;
+            margin-right: -10px;
+            width: unset;
+        }
+        // flex: 1 1 400px;
+        // width: fit-content;
+        // display: flex;
+    }
+
+    .c-career__imagewrapper {
+        @include sp {
+            width: 50%;
+        }
+    }
+
+    .c-career__welfareimg {
+        @include sp {
+            width: 100%;
+        }
+    }
+
+    .c-career__welfaretext {
+        max-width: 600px;
+        padding-left: 3.8%;
+        @include tab {
+            // max-width: 440px;
+            max-width: 440px;
+            padding-left: 2.7%;
+            padding-bottom: 38px;
+        }
+        @include sp {
+            margin: 0 auto;
+            max-width: 600px;
+            padding-bottom: 34px;
+        }
+    }
+
+    .c-career__welfareheading {
+        font-size: 2.8rem;
+        font-weight: 500;
+        color: $highlight-color;
+        margin-top: 93px;
+        letter-spacing: 0.7px;
+
+        &:nth-of-type(2) {
+            margin-top: 52px;
+            @include tab {
+                margin-top: 43px;
+            }
+
+            & + .c-career__welfarepoint {
+                margin-left: 3px;
+                margin-top: 18px;
+            }
+            @include sp {
+                margin-top: 27px;
+            }
+        }
+        @include tab {
+            font-size: 2.8rem;
+            margin-top: 53px;
+            letter-spacing: 0.7px;
+        }
+        @include sp {
+            font-size: 2.2rem;
+            margin-top: 28px;
+            letter-spacing: 1.2px;
+        }
+    }
+
+    .c-career__welfarepoints {
+        font-weight: 500;
+        color: $primary-color;
+        margin-left: 23px;
+        margin-top: 7px;
+        font-size: 2.2rem;
+        list-style: disc;
+
+        @include sp {
+            margin-top: 10px;
+        }
+
+        &:nth-of-type(1) {
+            .c-career__welfarepoint {
+                &:last-child {
+                    @include sp {
+                        margin-top: 12px;
+                        font-feature-settings: "palt";
+                    }
+                }
+            }
+        }
+
+        &:nth-of-type(2) {
+            margin-top: 13px;
+            @include tab {
+                margin-top: 8px;
+            }
+            @include sp {
+                margin-top: 13px;
+            }
+
+            .c-career__welfarepointsubul {
+                margin-top: 11px;
+                letter-spacing: 0.4px;
+                @include tab {
+                    font-size: 1.6rem;
+                    font-weight: 300;
+                }
+                @include sp {
+                    margin-left: -14px;
+                    margin-top: 15px;
+                    letter-spacing: -1.6px;
+                }
+
+                .c-career__welfarepointsubli {
+                    margin-top: 6px;
+                    @include sp {
+                        margin-top: 8px;
+                        margin-left: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .c-career__welfarepoint {
+        line-height: 1.4;
+
+        @include sp {
+            //   list-style-position: inside;
+            line-height: 1.1;
+        }
+
+        &:not(:nth-child(1)) {
+            margin-top: 11px;
+            @include sp {
+                // margin-top: 10px;
+                margin-top: 6px;
+                line-height: 1.21;
+            }
+        }
+
+        &:nth-child(1) {
+            .c-career__welfarepointsubli {
+                @include sp {
+                    transform: translate(-14px, -4px);
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            .c-career__welfarepointsubli {
+                margin-top: 4px;
+                @include sp {
+                    transform: translate(-4px, -6px);
+                }
+            }
+        }
+
+        &:nth-child(5) {
+            .c-career__welfarepointsubul {
+                margin-top: -4px;
+                list-style: square;
+                margin-left: 18px;
+                // margin-top: -8px;
+                transform: translateY(-5px);
+                @include tab {
+                    margin-top: 0;
+                }
+                @include sp {
+                    margin-left: 5px;
+                    margin-top: 17px;
+                }
+            }
+
+            .c-career__welfarepointsubli {
+                position: relative;
+                font-size: 0.7rem;
+
+                &:not(:nth-child(1)) {
+                    margin-top: 1px;
+                }
+            }
+
+            .c-career__welfarepointsublitxt {
+                font-size: 1.6rem;
+                position: relative;
+                top: 4px;
+                left: 5px;
+                @include tab {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .c-career__welfarepointsublibullet {
+                display: none;
+            }
+        }
+    }
+
+    .c-career__welfarepointtextheading {
+        font-size: 1.8rem;
+        position: relative;
+        left: -6px;
+        letter-spacing: 0.6px;
+        @include tab {
+            letter-spacing: 2.4px;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        @include sp {
+            letter-spacing: -0.1px;
+        }
+    }
+
+    .c-career__welfarepointtextheadingsmall {
+        font-size: 1.6rem;
+        font-weight: 300;
+        @include tab {
+            letter-spacing: -1.9px;
+        }
+    }
+
+    .c-career__welfarepointsubul {
+        font-size: 1.6rem;
+        font-weight: 300;
+        // margin-left: -4px;
+        @include tab {
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+    }
+
+    .c-career__welfarepointsubli {
+        margin-top: 12px;
+        @include tab {
+            margin-top: 7px;
+        }
+    }
+
+    .c-career__welfarepointsublibullet {
+        font-size: 1.6rem;
+        position: relative;
+        left: 1px;
+        top: 3px;
+        @include tab {
+            font-size: 1.4rem;
+            left: -2px;
+            top: 1px;
+        }
+    }
+
+    .c-career__welfarepointsublitxt {
+        margin-left: -6px;
+        letter-spacing: 0.3px;
+        line-height: 1.7;
+        @include tab {
+            margin-left: -9px;
+        }
+        @include sp {
+            font-size: 1.2rem;
         }
     }
 }

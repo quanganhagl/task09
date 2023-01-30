@@ -17,7 +17,9 @@
             bottom: 0;
             right: 0;
             height: 944px;
-            width: calc(46.7% + 361px);
+            // width: calc(46.7% + 361px);
+            width: calc(51.7% + 301px);
+
             @include tab {
                 height: 757px;
             }
@@ -306,7 +308,7 @@
         @include sp {
             width: 100%;
             flex-wrap: wrap;
-            padding: 9px;
+            padding: 10px;
             // max-width: 355px;
             max-width: 450px;
             margin: 0 auto;

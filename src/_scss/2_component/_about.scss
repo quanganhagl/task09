@@ -19,7 +19,9 @@
         z-index: -1;
         top: 0;
         left: 0;
-        width: calc(46.7% + 361px);
+        // width: calc(46.7% + 361px);
+        width: calc(51.7% + 301px);
+
         @include tab {
             width: calc(51.7% + 271px);
         }

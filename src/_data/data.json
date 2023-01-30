@@ -61,5 +61,111 @@
       "description": "独立を希望する人は、<br>建築士や施工管理技術者への資格の取得、独立に向けての勉強までサポートします。独立後はENTEXから仕事を受注することも可能です。仕入先の紹介なども行ないますので、安心して独立できます。<br>",
       "description2": "独立を望まない人は、<br>管理職となり職人の管理や他社が開催する会議へ参加したり、お客様との工事打合せの作業内容確認を行います。"
     }
+  ],
+  "welfareimgs": [
+    {
+      "id": 1,
+      "urlpc": "./assets/img/career__welfare1.jpg",
+      "urltab": "./assets/img/career__welfare1--tab.jpg",
+      "urlsp": "./assets/img/career__welfare1--sp.jpg"
+    },
+    {
+      "id": 2,
+      "urlpc": "./assets/img/career__welfare2.jpg",
+      "urltab": "./assets/img/career__welfare2--tab.jpg",
+      "urlsp": "./assets/img/career__welfare2--sp.jpg"
+    },
+    {
+      "id": 3,
+      "urlpc": "./assets/img/career__welfare3.jpg",
+      "urltab": "./assets/img/career__welfare3--tab.jpg",
+      "urlsp": "./assets/img/career__welfare3--sp.jpg"
+    },
+    {
+      "id": 4,
+      "urlpc": "./assets/img/career__welfare4.jpg",
+      "urltab": "./assets/img/career__welfare4--tab.jpg",
+      "urlsp": "./assets/img/career__welfare4--sp.jpg"
+    }
+  ],
+  "welfarepoints": [
+    {
+      "id": 1,
+      "pointtextheading": "遠方から弊社に入社される人は、ENTEX本社の上に社宅(社員<br class='is-display--onlypc'>寮)があります。",
+      "pointtextdescrs": [
+        {
+          "id": 1,
+          "subpoint": "現在は満室のため、近くのワンルームから（自転車通勤圏内）通勤していただきます。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "pointtextheading": "年1回社員旅行を開催<span class='c-career__welfarepointtextheadingsmall'>(参加希望者のみ)</span>",
+      "pointtextdescrs": [
+        {
+          "id": 1,
+          "subpoint": "社員旅行積立金3,000円（会社が旅費の半分以上を負担）"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "pointtextheading": "社会保険完備<span class='c-career__welfarepointtextheadingsmall'>(雇用保険、労災保険、健康保険、厚生年金）</span>"
+    },
+    {
+      "id": 4,
+      "pointtextheading": "希望者参加型の食事会<span class='c-career__welfarepointtextheadingsmall'>(費用は会社負担)</span>"
+    },
+    {
+      "id": 5,
+      "pointtextheading": "各種手当も充実",
+      "pointtextdescrs": [
+        { "id": 1, "subpoint": "皆勤手当：5,000円" },
+        { "id": 2, "subpoint": "雨天手当：1,000円" },
+        { "id": 3, "subpoint": "固定休日手当：5日分（賃金単価による）" },
+        { "id": 4, "subpoint": "資格手当" },
+        { "id": 5, "subpoint": "残業、休日手当" },
+        { "id": 6, "subpoint": "技能手当" },
+        { "id": 7, "subpoint": "通勤手当：月3万円まで" }
+      ]
+    },
+    {
+      "id": 6,
+      "pointtextheading": "昇給あり"
+    },
+    {
+      "id": 7,
+      "pointtextheading": "賞与あり（夏・冬 年2回）"
+    }
+  ],
+  "seniors": [
+    {
+      "id": 1,
+      "urlpc": "./assets/img/interview__seniorimg1.jpg",
+      "urltab": "./assets/img/interview__seniorimg1--tab.jpg",
+      "urlsp": "./assets/img/interview__seniorimg1--sp.jpg",
+      "message": "いつも明るく元気に作業。朝も一番に出勤してます！",
+      "nameage": "安川　聖 (30)",
+      "status": "入社2年目・外構担当職人　"
+    },
+    {
+      "id": 2,
+      "urlpc": "./assets/img/interview__seniorimg2.jpg",
+      "urltab": "./assets/img/interview__seniorimg2--tab.jpg",
+      "urlsp": "./assets/img/interview__seniorimg2--sp.jpg",
+      "message": "職長として土木・外構工事の現場管理をしながら作業指示",
+      "nameage": "福元　和稔 (45)",
+      "status": "入社3年目・土木、外構担当職長"
+    },
+    {
+      "id": 3,
+      "urlpc": "./assets/img/interview__seniorimg3.jpg",
+      "urltab": "./assets/img/interview__seniorimg3--tab.jpg",
+      "urlsp": "./assets/img/interview__seniorimg3--sp.jpg",
+      "message": "高校卒業後に入社し、関西で妻と出会い結婚。外構部長へ",
+      "nameage": "工藤　智成(41)",
+      "status": "入社23年目・外構部長"
+    }
   ]
 }

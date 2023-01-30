@@ -1,0 +1,46 @@
+<div id="#interview" class="c-interview">
+    <section class="c-interview__senior">
+        <div class="c-interview__seniorcontent l-container--960px">
+            <h2 class="c-interview__seniorheading">先輩社員からのメッセージ</h2>
+            <p class="c-interview__seniordescr">未経験で入社した多くのメンバーが活躍しています。<br>
+                各部門で活躍する現役メンバーたちの「リアルな声」をお届けします。</p>
+            <div class="c-interview__seniorblockwrapper">
+                <% seniors.forEach(senior=> { %>
+                    <div class="c-interview__seniorblock">
+                        <div class="c-interview__seniorimgwrapper">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="<%= senior.urlsp %>">
+                                <source media="(max-width: 1024px)" srcset="<%= senior.urltab %>">
+                                <img src="<%= senior.urlpc %>" alt="先輩社員からのメッセージ" class="c-interview__seniorimg">
+                            </picture>
+                        </div>
+                        <p class="c-interview__seniormessage">
+                            <%= senior.message %>
+                        </p>
+                        <div class="c-interview__seniorinfo">
+                            <div class="c-interview__seniorplaybtnwrapper">
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./assets/img/interview__seniorplaybtn--sp.png">
+                                    <source media="(max-width: 1024px)"
+                                        srcset="./assets/img/interview__seniorplaybtn--tab.png">
+                                    <img src="./assets/img/interview__seniorplaybtn.png" alt="<%=senior.nameage %>"
+                                        class="c-interview__seniorplaybtn">
+                                </picture>
+                            </div>
+                            <div class="c-interview__seniorinfotext">
+                                <h3 class="c-interview__seniornameage">
+                                    <%= senior.nameage %>
+                                </h3>
+                                <p class="c-interview__seniorstatus">
+                                    <%= senior.status %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <%});%>
+
+            </div>
+        </div>
+    </section>
+</div>
