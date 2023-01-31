@@ -1,16 +1,21 @@
 .c-interview {
-    padding: 46px 40px 142px;
-    @include tab {
-        padding: 51px 20px 0;
-    }
-
     .l-container--960px {
         @include tab {
             max-width: 728px;
         }
+        @include sp {
+            max-width: 335px;
+        }
     }
 
     .c-interview__senior {
+        padding: 46px 40px 143px;
+        @include tab {
+            padding: 51px 20px 86px;
+        }
+        @include sp {
+            padding: 33px 20px 69px;
+        }
     }
 
     .c-interview__seniorcontent {
@@ -21,10 +26,13 @@
         font-weight: 500;
         color: $secondary-color;
         text-align: center;
-        letter-spacing: 2px;
+        letter-spacing: 3.1px;
         @include tab {
             font-size: 3rem;
             letter-spacing: 1.5px;
+        }
+        @include sp {
+            font-size: 2.4rem;
         }
     }
 
@@ -40,16 +48,22 @@
             font-size: 1.4rem;
             margin-top: 9px;
         }
+        @include sp {
+            line-height: 1.58;
+        }
     }
 
     .c-interview__seniorblockwrapper {
         display: flex;
-        margin-top: 50px;
         margin-top: 52px;
         justify-content: space-between;
 
         @include tab {
             margin-top: 32px;
+        }
+        @include sp {
+            flex-wrap: wrap;
+            margin-top: 34px;
         }
     }
 
@@ -63,6 +77,11 @@
         @include tab {
             width: 31.5%;
         }
+        @include sp {
+            width: 100%;
+            flex-wrap: nowrap;
+            border-width: 2px;
+        }
 
         &:nth-child(1),
         &:nth-child(3) {
@@ -71,15 +90,32 @@
 
         &:nth-child(2) {
             border-color: #005384;
+            @include sp {
+                border-color: $secondary-color;
+            }
 
             .c-interview__seniorinfo {
                 background-color: #005384;
+                @include sp {
+                    background-color: $secondary-color;
+                }
+            }
+        }
+
+        &:not(:nth-child(1)) {
+            @include sp {
+                margin-top: 50px;
             }
         }
     }
 
     .c-interview__seniorimgwrapper {
         height: fit-content;
+        @include sp {
+            width: 139px;
+            height: 203px;
+            flex: 1 0 auto;
+        }
     }
 
     .c-interview__seniorimg {
@@ -97,40 +133,56 @@
             padding: 21px 10px 50px;
             line-height: 1.7;
         }
+        @include sp {
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            line-height: 1.5;
+            letter-spacing: 0;
+            padding: 25px 12px 50px;
+        }
     }
 
     .c-interview__seniorinfo {
         font-weight: 400;
         color: #fff;
         position: absolute;
+        width: 96%;
+        bottom: 0;
         left: 50%;
         transform: translate(-50%, 57.3%);
         background-color: $secondary-color;
         display: flex;
+        height: 82px;
+        justify-content: center;
         align-items: center;
-        width: 96%;
-        padding: 14px 19px 17px 0;
-        bottom: 0;
         @include tab {
             width: 86.3%;
-            padding: 9px 0 17px;
-            // bottom: -30px;
+            height: 65px;
+
             transform: translate(-50%, 46.2%);
-            padding: 9px 14px 9px 0;
+        }
+        @include sp {
+            height: 60px;
+            transform: translate(-50%, 53%);
+            width: 84.6%;
         }
     }
 
     .c-interview__seniorplaybtnwrapper {
-        margin-left: 7.4%;
-        // width: 23%;
-        text-align: center;
+        // margin-left: 2px;
+        width: fit-content;
+        height: 24px;
+        // text-align: center;
         @include tab {
             // width: 31.2%;
-            margin-top: 13px;
+            // margin-top: 13px;
+            height: 18px;
         }
     }
 
     .c-interview__seniorplaybtn {
+        width: 24px;
         @include tab {
             width: 18px;
         }
@@ -138,13 +190,27 @@
 
     .c-interview__seniorinfotext {
         // flex: 1 1 auto;
-        margin-left: 6.8%;
+        // margin-left: 6.8%;
+        width: 232px;
+        padding-left: 19px;
+        @include tab {
+            width: 144px;
+            padding-left: 14px;
+        }
+        @include sp {
+            width: 216px;
+            padding-left: 19px;
+        }
     }
 
     .c-interview__seniornameage {
         font-size: 2rem;
+        font-weight: 400;
         @include tab {
             font-size: 1.4rem;
+        }
+        @include sp {
+            font-size: 1.6rem;
         }
     }
 
@@ -153,6 +219,283 @@
         letter-spacing: 0.4px;
         @include tab {
             font-size: 1.2rem;
+        }
+    }
+
+    .c-interview__ceo {
+        background-color: $secondary-color;
+        padding: 93px 40px 128px;
+        @include tab {
+            padding: 51px 20px 50px;
+        }
+        @include sp {
+            padding: 52px 20px 8px;
+        }
+    }
+
+    .c-interview__ceocontent {
+        color: #fff;
+    }
+
+    .c-interview__ceoheading {
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 2.5px;
+
+        &:nth-of-type(2) {
+            margin-top: 47px;
+            @include sp {
+                margin-top: 55px;
+            }
+        }
+        @include sp {
+            font-size: 2.4rem;
+            letter-spacing: 1px;
+        }
+    }
+
+    .c-interview__ceotextimgwrapper {
+        display: flex;
+        margin-top: 41px;
+        @include tab {
+            margin-top: 23px;
+            justify-content: space-between;
+        }
+        @include sp {
+            flex-wrap: wrap;
+        }
+    }
+
+    .c-interview__ceopotentialwrapper {
+        padding-right: 58px;
+        @include tab {
+            padding-right: 8px;
+        }
+        @include sp {
+            padding-right: 0;
+        }
+    }
+
+    .c-interview__ceosubheading {
+        font-size: 2.4rem;
+        font-weight: 500;
+        // margin-top: 50px;
+        letter-spacing: 0.5px;
+        @include tab {
+            font-size: 2rem;
+            margin-top: 3px;
+            letter-spacing: 1px;
+        }
+        @include sp {
+            font-feature-settings: "palt";
+            letter-spacing: 1.9px;
+        }
+
+        &--special {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        &--btm {
+            @extend .c-interview__ceosubheading;
+            margin-top: 30px;
+
+            line-height: 1.9;
+            @include tab {
+                margin-top: 44px;
+                line-height: 2.1;
+                padding-right: 84px;
+                letter-spacing: 0.5px;
+            }
+            @include sp {
+                padding-right: 0;
+                font-size: 1.6rem;
+                margin-top: 15px;
+                line-height: 1.69;
+                letter-spacing: 0.6px;
+            }
+        }
+    }
+
+    .c-interview__ceopotentialtext {
+        font-size: 1.6rem;
+        font-weight: 300;
+
+        letter-spacing: 0.3px;
+        line-height: 1.8;
+        @include tab {
+            max-width: 420px;
+            line-height: 1.78;
+        }
+        @include sp {
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.58;
+        }
+
+        &:nth-of-type(1) {
+            margin-top: 26px;
+            @include tab {
+                margin-top: 30px;
+            }
+            @include sp {
+                margin-top: 34px;
+            }
+        }
+
+        &:not(:nth-of-type(1)) {
+            margin-top: 25px;
+            @include sp {
+                margin-top: 31px;
+            }
+        }
+    }
+
+    .c-interview__ceoimgwrapper {
+        width: 279px;
+        flex-shrink: 0;
+        @include tab {
+            width: 261px;
+        }
+        @include sp {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .c-interview__ceoimg {
+        @include sp {
+            width: 240px;
+            margin-top: 36px;
+        }
+    }
+
+    .c-interview__ceosignature {
+        margin-top: 23px;
+        font-size: 2.2rem;
+        font-weight: 500;
+        letter-spacing: 0.6px;
+        @include tab {
+            font-size: 1.8rem;
+            margin-top: 44px;
+        }
+        @include sp {
+            font-size: 1.4rem;
+            text-align: end;
+            margin-right: 15px;
+            margin-top: 10px;
+        }
+    }
+
+    .c-interview__ceologotextwrapper {
+        display: flex;
+        margin-top: 35px;
+        @include tab {
+            margin-top: 17px;
+        }
+        @include sp {
+            flex-wrap: wrap;
+        }
+    }
+
+    .c-interview__ceologowrapper {
+        width: 308px;
+        flex-shrink: 0;
+        @include tab {
+            width: 247px;
+        }
+        @include sp {
+            width: 100%;
+        }
+    }
+
+    .c-interview__ceologo {
+        margin-top: 8px;
+        @include tab {
+            margin-top: 14px;
+        }
+        @include sp {
+            margin-top: 17px;
+        }
+    }
+
+    .c-interview__ceomeaningtxtwrapper {
+        padding-left: 68px;
+        @include tab {
+            padding-left: 41px;
+        }
+        @include sp {
+            padding-left: 0;
+            margin-top: 20px;
+            width: 100%;
+            padding: 0 10px;
+        }
+    }
+
+    .c-interview__ceoabbrevmeaning {
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 2.15;
+        margin-top: -6px;
+        @include tab {
+            font-size: 2rem;
+            line-height: 2.8;
+            margin-top: -10px;
+        }
+        @include sp {
+            line-height: 2.6;
+        }
+
+        &:nth-child(1) {
+            margin-top: -6px;
+            @include tab {
+                margin-top: -13px;
+            }
+            @include sp {
+                margin-top: -11px;
+            }
+        }
+    }
+
+    .c-interview__ceoabbrev {
+        position: relative;
+        display: inline-block;
+        min-width: 35px;
+
+        &::after {
+            content: "";
+            width: 62px;
+            height: 1px;
+            background-color: #fff;
+            position: absolute;
+            left: 54px;
+            top: 26px;
+            @include tab {
+                width: 42px;
+                left: 49px;
+                top: 32px;
+            }
+            @include sp {
+                width: 19px;
+                left: 44px;
+                top: 28px;
+            }
+        }
+    }
+
+    .c-interview__ceomeaningtxt {
+        position: relative;
+        left: 94px;
+        letter-spacing: 0.3px;
+        @include tab {
+            left: 72px;
+            top: 6px;
+        }
+        @include sp {
+            font-size: 1.4rem;
+            font-weight: 400;
+            left: 36px;
+            top: 0;
         }
     }
 }

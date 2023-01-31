@@ -1,0 +1,44 @@
+<section id="#c-recruit" class="c-recruit">
+    <div class="c-recruit__content l-container--960px">
+        <h2 class="c-recruit__heading">採用情報</h2>
+        <p class="c-recruit__description">株式会社エンテックスでは、<br class="is-display--onlysp">下記の人材を募集しています。<br>
+            詳しくは募集要項をご確認ください。</p>
+        <div class="c-recruit__levelwrapper">
+            <div class="c-recruit__level is-active">
+                <span class="c-recruit__leveltext">新卒採用</span>
+            </div>
+            <div class="c-recruit__level">
+                <span class="c-recruit__leveltext">中途採用</span>
+            </div>
+        </div>
+        <div class="c-recruit__tablewrapper">
+            <table class="c-recruit__table">
+
+                <% recruitfreshs.forEach(recruitfresh=>{ %>
+                    <tr class="c-recruit__tablerow">
+                        <th class="c-recruit__tableheader">
+                            <%- recruitfresh.tableheader %>
+                        </th>
+                        <td class="c-recruit__tablecell">
+                            <%- recruitfresh.tablebody %>
+                        </td>
+                    </tr>
+                    <%})%>
+            </table>
+            <div class="c-recruit__entrancelevel">
+                <a href="#" class="c-recruit__highschool">
+                    <img src="./assets/img/header__recruiticon.svg" alt="採用情報" class="c-recruit__recruiticon">
+                    <span class="c-recruit__recruittext">
+                        高校生の方はこちら
+                    </span>
+                </a>
+                <a href="#" class="c-recruit__highschool--not">
+                    <img src="./assets/img/header__recruiticon.svg" alt="採用情報" class="c-recruit__recruiticon">
+                    <span class="c-recruit__recruittext">
+                        高校生以外の方はこちら
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,184 @@
+.c-recruit {
+    padding: 90px 40px 128px;
+    @include tab {
+        padding: 51px 20px 50px;
+    }
+    @include sp {
+        padding: 52px 20px 8px;
+    }
+
+    .c-recruit__content {
+    }
+
+    .c-recruit__heading {
+        font-size: 4.4rem;
+        font-weight: 500;
+        color: $secondary-color;
+        text-align: center;
+        letter-spacing: 3.4px;
+    }
+
+    .c-recruit__description {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $primary-color;
+        text-align: center;
+        margin-top: 8px;
+        letter-spacing: 0.4px;
+        line-height: 1.7;
+    }
+
+    .c-recruit__levelwrapper {
+        font-size: 2.6rem;
+        font-weight: 400;
+        color: $primary-color;
+        margin-top: 100px;
+        display: flex;
+        margin-top: 56px;
+    }
+
+    .c-recruit__level {
+        border: 1px solid #404141;
+        border-bottom: none;
+        border-color: $secondary-color;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        text-align: center;
+        padding: 34px 20px 20px;
+
+        &.is-active {
+            color: #fff;
+            height: 94px;
+            width: 53.8%;
+
+            border-color: $secondary-color;
+            background-color: $secondary-color;
+            @include tab {
+                height: 64px;
+            }
+        }
+
+        &:nth-child(2) {
+            border-left: none;
+            flex: 1 1 auto;
+            height: 84px;
+            align-self: end;
+            border-top-left-radius: 0;
+            border-top-right-radius: 20px;
+            @include tab {
+                height: 58px;
+                border-top-right-radius: 10px;
+            }
+        }
+    }
+
+    .c-recruit__tablewrapper {
+        background-color: #f2f5f7;
+        border: 3px solid $secondary-color;
+        padding: 41px 37px 57px;
+    }
+
+    .c-recruit__table {
+        color: #0b0b0b;
+        border-collapse: collapse;
+    }
+
+    .c-recruit__tablerow {
+    }
+
+    .c-recruit__tableheader {
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 16px 60px;
+        line-height: 1.37;
+        width: 29.1%;
+        text-align: left;
+        vertical-align: top;
+        border-bottom: 1px solid #707070;
+        @include tab {
+            font-size: 1.6rem;
+        }
+    }
+
+    .c-recruit__tablecell {
+        font-size: 1.6rem;
+        font-weight: 400;
+
+        border-bottom: 1px solid #707070;
+
+        letter-spacing: 0.3px;
+        line-height: 1.8;
+        padding: 15px 45px 15px 0;
+        @include tab {
+            font-size: 1.4rem;
+        }
+    }
+
+    .c-recruit__tablerow {
+        &:nth-child(1) {
+            .c-recruit__tableheader {
+                border-bottom: 5px solid $secondary-color;
+            }
+
+            .c-recruit__tablecell {
+                border-bottom: 5px solid $secondary-color;
+            }
+        }
+    }
+
+    .c-recruit__entrancelevel {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        margin-top: 49px;
+        max-width: 741px;
+        @include tab {
+            // max-width: 500px;
+        }
+    }
+
+    .c-recruit__leveltext {
+    }
+
+    .c-recruit__highschool {
+        display: flex;
+        background-color: $secondary-color;
+        height: 66px;
+        flex: 0 1 353px;
+        border-radius: 9px;
+        align-items: center;
+        justify-content: center;
+
+        @include tab {
+            height: 54px;
+            flex: 0 1 301px;
+        }
+
+        &--not {
+            @extend .c-recruit__highschool;
+            background-color: #005384;
+        }
+    }
+
+    .c-recruit__recruiticon {
+        flex-shrink: 0;
+    }
+
+    .c-recruit__recruittext {
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: #fff;
+        padding-left: 10px;
+        @include tab {
+            font-size: 2rem;
+        }
+    }
+
+    .c-recruit__recruiticon {
+        width: 30px;
+        @include tab {
+            width: 27px;
+        }
+    }
+}

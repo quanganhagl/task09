@@ -47,6 +47,15 @@
             display: none;
         }
     }
+
+    &--onlytab {
+        @include tab {
+            display: none;
+        }
+        @include sp {
+            display: unset;
+        }
+    }
 }
 
 .is-display {

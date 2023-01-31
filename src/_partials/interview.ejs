@@ -2,8 +2,8 @@
     <section class="c-interview__senior">
         <div class="c-interview__seniorcontent l-container--960px">
             <h2 class="c-interview__seniorheading">先輩社員からのメッセージ</h2>
-            <p class="c-interview__seniordescr">未経験で入社した多くのメンバーが活躍しています。<br>
-                各部門で活躍する現役メンバーたちの「リアルな声」をお届けします。</p>
+            <p class="c-interview__seniordescr">未経験で入社した多くのメンバーが<br class="is-display--onlysp">活躍しています。<br>
+                各部門で活躍する現役メンバーたちの<br class="is-display--onlysp">「リアルな声」をお届けします。</p>
             <div class="c-interview__seniorblockwrapper">
                 <% seniors.forEach(senior=> { %>
                     <div class="c-interview__seniorblock">
@@ -40,6 +40,65 @@
                     </div>
                     <%});%>
 
+            </div>
+        </div>
+    </section>
+    <section class="c-interview__ceo">
+        <div class="c-interview__ceocontent l-container--960px">
+            <h2 class="c-interview__ceoheading">代表メッセージ</h2>
+            <div class="c-interview__ceotextimgwrapper">
+                <div class="c-interview__ceopotentialwrapper">
+                    <h3 class="c-interview__ceosubheading">「学歴・経験不問。<br class="is-display--onlysp"><span
+                            class="c-interview__ceosubheading--special">ポテンシャル重視で採用」</span></h3>
+                    <p class="c-interview__ceopotentialtext">
+                        弊社は、｢お客様に喜ばれる仕事をしよう｣という会社理念を掲げて社会貢献事業を行なっています。<br
+                            class="is-display--onlysp">何か仕事で困った事があってもお客様の立場や、気持ちを考えれば社員一同、同じ方向を向いて仕事が出来ます。
+                    </p>
+                    <p class="c-interview__ceopotentialtext">
+                        また、個人の目標も大切にしており弊社の全てのメンバーが夢、希望をもって仕事に取り組み楽しい職場作りを目指しております。<br>
+                        メンバー同士、助け合いの精神をもって規律正しく和気あいあいと作業を行なっています。
+                    </p>
+                    <p class="c-interview__ceopotentialtext">
+                        昔のように職人は誰でもなれる職業ではありません。<br
+                            class="is-display--onlysp">身体も頭脳も健全でなければ一流の職人にはなれませんが、ENTEXでは多くのまだ若いプロの職人が親切、丁寧に教育しますので安心です。
+                    </p>
+                </div>
+                <div class="c-interview__ceoimgwrapper">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="./assets/img/interview__ceoimg--sp.jpg">
+                        <source media="(max-width: 1024px)" srcset="./assets/img/interview__ceoimg--tab.jpg">
+                        <img src="./assets/img/interview__ceoimg.jpg" alt="代表メッセージ" class="c-interview__ceoimg">
+                    </picture>
+                </div>
+            </div>
+            <h3 class="c-interview__ceosubheading--btm">自分の作品として最低でも50年は施工場所が残る仕事です。<br>
+                大切な家族や友人に、自分が施工した自慢の作品がすぐに理解できて貰える喜びが、<br class="is-notdisplay--onlytab">
+                とても嬉しくて遣り甲斐のある仕事です。</h3>
+            <p class="c-interview__ceosignature">株式会社ENTEX　代表取締役社長　遠藤 剛</p>
+            <h2 class="c-interview__ceoheading">社名の由来</h2>
+            <div class="c-interview__ceologotextwrapper l-container--880px">
+                <div class="c-interview__ceologowrapper">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="./assets/img/interview__ceologo--sp.png">
+                        <source media="(max-width: 1024px)" srcset="./assets/img/interview__ceologo--tab.png">
+                        <img src="./assets/img/interview__ceologo.png" alt="社名の由来" class="c-interview__ceologo">
+                    </picture>
+                </div>
+                <div class="c-interview__ceomeaningtxtwrapper">
+                    <p class="c-interview__ceoabbrevmeaning">
+                        <span class="c-interview__ceoabbrev">EN</span>
+                        <span class="c-interview__ceomeaningtxt">当社代表「遠藤(Endo)」の頭文字
+                        </span>
+                    </p>
+                    <p class="c-interview__ceoabbrevmeaning">
+                        <span class="c-interview__ceoabbrev">TE</span>
+                        <span class="c-interview__ceomeaningtxt">テクノロジー(技術)</span>
+                    </p>
+                    <p class="c-interview__ceoabbrevmeaning">
+                        <span class="c-interview__ceoabbrev">X</span>
+                        <span class="c-interview__ceomeaningtxt">無限に成長すると言う意味のX</span>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
